@@ -199,6 +199,7 @@
 							"pm.test('Expect db values to equal original values for user', () => {",
 							"    let userWithoutPassword = {...user, password: null, userRole: null };",
 							"    let responseWithoutPassword = {...response, password: null};",
+							"    console.log(userWithoutPassword,responseWithoutPassword)",
 							"    pm.expect(userWithoutPassword).to.deep.equal(responseWithoutPassword);",
 							"});",
 							"",
@@ -316,5 +317,4 @@
 			},
 			"response": []
 		}
-	]
-}
+	
