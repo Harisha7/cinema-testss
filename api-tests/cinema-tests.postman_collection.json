@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "3458bbf1-4c1e-4fe5-84ee-6d0569131841",
+		"_postman_id": "7f26663b-0fc6-4cc5-b41e-d422ad42a7f9",
 		"name": "Cinema-tests",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24652535"
 	},
 	"item": [
 		{
@@ -195,9 +196,8 @@
 							"// create the user in the DB has indentical values",
 							"// for all properties compared to what we are reading from the DB",
 							"// but omit password from this check...",
-							"// Note: Expect userRole to be null since we haven't set it!",
 							"pm.test('Expect db values to equal original values for user', () => {",
-							"    let userWithoutPassword = {...user, password: null, userRole:null}",
+							"    let userWithoutPassword = {...user, password: null, userRole: null };",
 							"    let responseWithoutPassword = {...response, password: null};",
 							"    pm.expect(userWithoutPassword).to.deep.equal(responseWithoutPassword);",
 							"});",
