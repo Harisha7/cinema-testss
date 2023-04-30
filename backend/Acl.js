@@ -47,7 +47,7 @@ module.exports = class Acl {
 
 /* 
   White-listing is usually done by setting a rule for every single
-  method x table x role for each route that should be allowed
+  method x table x role for each route that should be allowed//
 
   ['post', 'users', 'not logged in']
   ['post', 'users', 'admin']
